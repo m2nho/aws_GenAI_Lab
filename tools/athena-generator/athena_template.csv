@@ -1,0 +1,17 @@
+type,database_name,table_name,column_name,column_type,column_comment
+database,ecommerce_data,,,,
+table,ecommerce_data,products,,,
+column,ecommerce_data,products,product_id,int,Unique identifier for each product
+column,ecommerce_data,products,product_name,string,Name of the product
+column,ecommerce_data,products,category,string,Category the product belongs to
+column,ecommerce_data,products,price,"decimal(10,2)",Price of the product
+column,ecommerce_data,products,description,string,Detailed description of the product
+column,ecommerce_data,products,created_at,timestamp,Timestamp when product was created
+column,ecommerce_data,products,updated_at,timestamp,Timestamp when product was last updated
+table,ecommerce_data,reviews,,,
+column,ecommerce_data,reviews,review_id,int,Unique identifier for each review
+column,ecommerce_data,reviews,product_id,int,Foreign key referencing the product
+column,ecommerce_data,reviews,customer_name,string,Name of the customer who left the review
+column,ecommerce_data,reviews,rating,int,"Rating given by the customer (e.g., 1-5)"
+column,ecommerce_data,reviews,comment,string,Text of the review
+column,ecommerce_data,reviews,review_date,timestamp,Date and time when the review was submitted
